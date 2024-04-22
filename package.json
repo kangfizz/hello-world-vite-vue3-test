@@ -1,19 +1,35 @@
 {
   "name": "hello-world-vite-vue3-test",
-  "version": "0.0.1",
-  "main": "dist/hello-world.common.js",
+  "version": "0.0.3",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/hello-world-vite-vue3-test.umd.cjs",
+  "module": "./dist/hello-world-vite-vue3-test.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hello-world-vite-vue3-test.js",
+      "require": "./dist/hello-world-vite-vue3-test.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "build-package": "vue-cli-service build --target lib —-name hello-world-vite-vue3-test ./src/components/install.js"
+    "preview": "vite preview"
   },
   "dependencies": {
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kangfizz/hello-world-vite-vue3-test.git"
   }
 }
