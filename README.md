@@ -1,7 +1,22 @@
-# Vue 3 + Vite
+# HelloWorld Vite Vue3 Test
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+It's just a npm package for test by using Vite + Vue3.
 
-## Recommended IDE Setup
+## Setup (Vite)
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+- In `main.js`
+````javascript
+import HelloWorld from 'hello-world-vite-vue3-test'
+...
+...
+const myApp = createApp(App)
+myApp.use(HelloWorld)
+myApp.mount('#app')
+````
+
+- In `your_page.vue`
+````javascript
+...
+<hello-world-test />
+...
+````
