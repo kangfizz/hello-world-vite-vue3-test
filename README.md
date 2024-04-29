@@ -1,6 +1,6 @@
 # HelloWorld Vite Vue3 Test
 
-It's just a npm package for test by using Vite + Vue3.
+It's just a npm package for test by using Vite + Vue3 + Tailwind CSS.
 
 ## Setup (Vite)
 
@@ -19,4 +19,12 @@ myApp.mount('#app')
 ...
 <hello-world-test />
 ...
+````
+
+- In `tailwind.config.js`
+````javascript
+  content: [
+    ....
+    './node_modules/hello-world-vite-vue3-test/**/*.{vue,js,ts,jsx,tsx}',
+  ],
 ````
