@@ -18,7 +18,8 @@
     "dev": "vite",
     "build": "vite build",
     "build:doc": "vite build --outDir docs --mode development",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "release-it"
   },
   "dependencies": {
     "vue": "^3.4.21"
@@ -27,11 +28,20 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
+    "release-it": "^17.2.1",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kangfizz/hello-world-vite-vue3-test.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    }
   }
 }
